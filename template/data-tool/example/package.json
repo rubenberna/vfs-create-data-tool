@@ -10,12 +10,14 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "data-tool-template": "link:..",
-    "react": "link:../node_modules/react",
-    "react-dom": "link:../node_modules/react-dom",
+    "notistack": "^1.0.9",
+    "@material-ui/core": "^4.11.4",
     "react-intl": "^5.20.1",
+    "react": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "link:../node_modules/react-scripts"
+    "react-dom": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-dom",
+    "react-scripts": "{{#if yarn}}link:..{{else}}file:..{{/if}}/node_modules/react-scripts",
+    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
