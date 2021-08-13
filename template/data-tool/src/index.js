@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IntlProvider } from 'react-intl'
-import { App } from "./components/App";
 import flatten from 'flat'
+import { App } from "./components/App";
 import { ExampleIcon } from "./assets/icons/ExampleIcon";
 import lang_en from './lang/en.json'
 import lang_nl from './lang/nl.json'
@@ -18,10 +18,11 @@ export const Component = ({ state }) => {
 };
 
 const metadata = {
+  id: '', // to be given by Data Portal admins
   title: "Data tool template",
   requiredPermissions: ["Admin", "Super.Admin"],
-  description: "This is an app that changes the plartform's language",
-  icon: ExampleIcon,
+  description: "This is sample app to change the platform's language",
+  icon: ExampleIcon, // can also be a google fonts icon (https://fonts.google.com/icons) for example
 };
 
 export { Component as default, metadata };
@@ -32,6 +33,7 @@ App.propTypes = {
     changeLocale: PropTypes.func,
     idToken: PropTypes.string,
     addNotification: PropTypes.func,
-    closeNotification: PropTypes.func
+    closeNotification: PropTypes.func,
+    environment: PropTypes.string
   }),
 };

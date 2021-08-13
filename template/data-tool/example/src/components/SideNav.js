@@ -1,7 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const SideNav = ({ Icon, link }) => {
+export const SideNav = ({ icon, link }) => {
+
+  const iconColor = '#fff'
+  const iconSize = '4rem'
+
+  const renderIcon = () => {
+    console.log(icon);
+    if (typeof icon === 'string') {
+      return <i className="material-icons" style={{ color: iconColor, fontSize: iconSize }}>{icon}</i>
+    }
+    const DataToolIcon = icon
+    return <DataToolIcon color={iconColor} width={iconSize}/>
+  }
 
   return (
     <div className="sidenav">
@@ -11,7 +23,7 @@ export const SideNav = ({ Icon, link }) => {
       <h4 className="sidenav-sub-title">( workbench )</h4>
       <div className="sidenav-icon">
         <Link to={link}>
-          <Icon/>
+          { renderIcon() }
         </Link>
       </div>
     </div>

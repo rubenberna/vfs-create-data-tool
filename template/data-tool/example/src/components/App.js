@@ -18,7 +18,8 @@ const App = () => {
     changeLocale: setLocale,
     idToken: "-",
     addNotification,
-    closeNotification
+    closeNotification,
+    environment: 'qa'
   }
 
   const exampleComponentLink = `/${convertToKebabCase(metadata.title)}`
