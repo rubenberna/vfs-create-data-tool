@@ -108,6 +108,11 @@ a {
   margin: 0 auto;
 }
 
+i.sidenav-icon {
+  color: #FFFFFF;
+  font-size: 4rem;
+}
+
 @media screen and (max-height: 45rem) {
   .sidenav {padding-top: 1.5rem;}
   .sidenav a {font-size: 1.8rem;}

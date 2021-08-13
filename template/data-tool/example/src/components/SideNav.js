@@ -7,9 +7,8 @@ export const SideNav = ({ icon, link }) => {
   const iconSize = '4rem'
 
   const renderIcon = () => {
-    console.log(icon);
     if (typeof icon === 'string') {
-      return <i className="material-icons" style={{ color: iconColor, fontSize: iconSize }}>{icon}</i>
+      return <i className="material-icons sidenav-icon">{icon}</i>
     }
     const DataToolIcon = icon
     return <DataToolIcon color={iconColor} width={iconSize}/>
