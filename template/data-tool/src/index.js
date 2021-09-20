@@ -20,7 +20,6 @@ export const Component = ({ state }) => {
 const metadata = {
   id: '', // to be given by Data Portal admins
   title: "Data tool template",
-  requiredPermissions: ["Admin", "Super.Admin"],
   description: "This is sample app to change the platform's language",
   icon: ExampleIcon, // can also be a google fonts icon (https://fonts.google.com/icons) for example
 };

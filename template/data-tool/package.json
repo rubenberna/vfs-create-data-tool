@@ -40,9 +40,11 @@
     "dist"
   ],
   "dependencies": {
-    "concurrently": "^6.2.0",
+    "@material-ui/core": "^4.11.4",
+    "axios": "^0.21.1",
+    "flat": "^5.0.2",
     "node-sass": "^6.0.0",
     "react-intl": "^5.20.1",
-    "vfs-msal-auth": "1.0.15"
+    "vfs-msal-auth": "1.0.16"
   }
 }
