@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <SideNav Icon={metadata.icon} link={exampleComponentLink}/>
+      <SideNav icon={metadata.icon} link={exampleComponentLink}/>
       <Switch>
         <Suspense fallback={<div>Loading...</div>}>
           <main className="main">
